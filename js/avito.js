@@ -395,17 +395,17 @@ function revisarCruci(ultimaK) {
       resueltas.add(i);
       ks.forEach((k, j) => { const ce = celEl(k); ce.classList.add('ok'); setTimeout(() => { ce.classList.remove('salta'); void ce.offsetWidth; ce.classList.add('salta'); }, reduce ? 0 : j * 60); });
       $(`#pistas button[data-i="${i}"]`).classList.add('ok');
-      $('#cruciMsg').textContent = resueltas.size < PALABRAS.length ? ['¡Eso!', '¡Bien ahí!', '¡Vas muy bien!'][resueltas.size - 1] || '' : '';
+      ($('#cruciMsg')||{textContent:''}).textContent = resueltas.size < PALABRAS.length ? ['¡Eso!', '¡Bien ahí!', '¡Vas muy bien!'][resueltas.size - 1] || '' : '';
     } else if (ultimaK && ks.includes(ultimaK) && vals.every(Boolean)) {
       ks.forEach(k => { const ce = celEl(k); ce.classList.remove('mal'); void ce.offsetWidth; ce.classList.add('mal'); });
-      $('#cruciMsg').textContent = 'Mmm, esa no. Probá de nuevo.';
+      ($('#cruciMsg')||{textContent:''}).textContent = 'Mmm, esa no. Probá de nuevo.';
     }
   });
   if (resueltas.size === PALABRAS.length && !terminado) {
     terminado = true; cruci.classList.add('fin');
     $$('.cel.fija', cruci).forEach((ce, j) => setTimeout(() => ce.classList.add('on'), reduce ? 0 : 300 + j * 110));
     $$('.cel__in', cruci).forEach(x => { x.readOnly = true; x.blur(); });
-    setTimeout(() => { $('#cruciMsg').textContent = '¡Llegaste! Pareja 3670, te esperamos.'; $('#visitaCard').classList.add('on'); }, reduce ? 0 : 1100);
+    setTimeout(() => { ($('#cruciMsg')||{textContent:''}).textContent = '¡Llegaste! Pareja 3670, te esperamos.'; $('#visitaCard').classList.add('on'); }, reduce ? 0 : 1100);
     cruci.setAttribute('aria-label', 'Crucigrama completo: Pareja 3670');
   }
 }
@@ -422,7 +422,7 @@ cruci.addEventListener('input', (e) => {
   const k = inp.closest('.cel').dataset.k;
   const v = (inp.value || '').toUpperCase().replace(/[^A-ZÑ0-9]/g, '').slice(-1);
   inp.value = v; celEl(k).classList.remove('ayuda');
-  if ($('#cruciMsg').textContent.startsWith('Mmm')) $('#cruciMsg').textContent = '';
+  if (($('#cruciMsg')||{textContent:''}).textContent.startsWith('Mmm')) ($('#cruciMsg')||{textContent:''}).textContent = '';
   revisarCruci(k);
   if (v) mover(k, 1);
 });
@@ -445,7 +445,7 @@ function darLetra(i) {
   const k = keysDe(i).find(x => inEl(x).value !== CEL[x].ch); if (!k) return false;
   inEl(k).value = CEL[k].ch; celEl(k).classList.add('ayuda'); revisarCruci(k); return true;
 }
-$('#crucLetra').addEventListener('click', () => {
+$('#crucLetra')?.addEventListener('click', () => {
   if (terminado) return;
   const i = resueltas.has(act) ? PALABRAS.findIndex((_, j) => !resueltas.has(j)) : act;
   marcar(i); darLetra(i); if (!resueltas.has(i)) enfocar(primeraLibre(i));
