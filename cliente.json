@@ -1,0 +1,969 @@
+{
+  "id": "avito-bistro-cafe",
+  "nombre": "Ávito Bistró Café",
+  "pais": "AR",
+  "idioma": "es",
+  "modo": "demo",
+  "whatsapp": "5491100000000",
+  "prefijoPedido": "AV",
+  "supabase": {
+    "url": "",
+    "anonKey": ""
+  },
+  "marca": {
+    "logo": "img/logo-oscuro.svg",
+    "logoPanel": "img/logo-claro.svg",
+    "colores": {
+      "fondo": "#F5ECDD",
+      "superficie": "#FAFAF6",
+      "texto": "#201712",
+      "primario": "#80402A",
+      "sobrePrimario": "#FAFAF6",
+      "acento": "#C8A474",
+      "sobreAcento": "#201712",
+      "borde": "#D7CFBB"
+    },
+    "fuentes": {
+      "titulos": "'Instrument Serif', Georgia, serif",
+      "texto": "'Instrument Sans', system-ui, sans-serif",
+      "googleFonts": "Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=Caveat:wght@500;600"
+    },
+    "estilo": {
+      "forma": "redondeada",
+      "radio": "18px",
+      "sombra": "suave",
+      "borde": "1px",
+      "mayusculas": false
+    },
+    "favicon": "img/favicon.svg"
+  },
+  "modulos": {
+    "carta": true,
+    "carrito": true,
+    "reservas": true,
+    "admin": true
+  },
+  "horarios": {
+    "lun": [
+      [
+        "08:00",
+        "21:00"
+      ]
+    ],
+    "mar": [
+      [
+        "08:00",
+        "21:00"
+      ]
+    ],
+    "mie": [
+      [
+        "08:00",
+        "21:00"
+      ]
+    ],
+    "jue": [
+      [
+        "08:00",
+        "21:00"
+      ]
+    ],
+    "vie": [
+      [
+        "08:00",
+        "21:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "21:00"
+      ]
+    ],
+    "dom": [
+      [
+        "09:00",
+        "21:00"
+      ]
+    ]
+  },
+  "reservas": {
+    "intervaloMin": 30,
+    "duracionMin": 90,
+    "capacidad": 40,
+    "maxPersonas": 8,
+    "anticipacionMin": 60,
+    "diasAdelante": 30,
+    "ultimoTurnoMin": 60,
+    "cerrados": []
+  },
+  "pedidos": {
+    "salidas": [
+      "whatsapp",
+      "mercadopago"
+    ],
+    "tipos": [
+      "retiro"
+    ],
+    "envio": 0,
+    "minimo": 0
+  },
+  "pagos": {
+    "mercadopago": {
+      "endpoint": "https://kit-demos-amf.vercel.app/api/mp-preference",
+      "modo": "sandbox"
+    }
+  },
+  "carta": {
+    "categorias": [
+      {
+        "id": "brunch-de-temporada",
+        "nombre": "Brunch de temporada"
+      },
+      {
+        "id": "nuevos-combos",
+        "nombre": "Combos con infusión"
+      },
+      {
+        "id": "menu-ejecutivo",
+        "nombre": "Menú ejecutivo"
+      },
+      {
+        "id": "pasteleria-avito",
+        "nombre": "Pastelería Ávito"
+      },
+      {
+        "id": "cafeteria",
+        "nombre": "Cafetería"
+      },
+      {
+        "id": "happy-hour",
+        "nombre": "Happy hour 2x1"
+      },
+      {
+        "id": "laminados",
+        "nombre": "Laminados"
+      },
+      {
+        "id": "tostas-avito",
+        "nombre": "Tostas Ávito"
+      },
+      {
+        "id": "huevos-y-algo-mas",
+        "nombre": "Huevos y algo más"
+      },
+      {
+        "id": "frutas",
+        "nombre": "Frutas"
+      },
+      {
+        "id": "entre-panes",
+        "nombre": "Entre panes"
+      },
+      {
+        "id": "entraditas",
+        "nombre": "Entraditas"
+      },
+      {
+        "id": "sugerencias-de-estacion",
+        "nombre": "Sugerencias de estación"
+      },
+      {
+        "id": "pastas",
+        "nombre": "Pastas caseras"
+      },
+      {
+        "id": "postres",
+        "nombre": "Postres"
+      },
+      {
+        "id": "bebidas-sin-alcohol",
+        "nombre": "Sin alcohol"
+      },
+      {
+        "id": "cervezas-y-tragos",
+        "nombre": "Cervezas y tragos"
+      },
+      {
+        "id": "vinos",
+        "nombre": "Vinos"
+      },
+      {
+        "id": "gift-cards",
+        "nombre": "Gift cards"
+      }
+    ],
+    "productos": [
+      {
+        "id": "brunch-primavera",
+        "categoria": "brunch-de-temporada",
+        "nombre": "Brunch de primavera para 2",
+        "descripcion": "Para dos personas, incluye 2 Aperol.",
+        "precio": 54000,
+        "foto": "img/carta/brunch-para-2.webp"
+      },
+      {
+        "id": "suma-aperol",
+        "categoria": "brunch-de-temporada",
+        "nombre": "Sumá 2 Aperol al brunch",
+        "descripcion": "",
+        "precio": 14900
+      },
+      {
+        "id": "croissant-o-medialuna-infusion",
+        "categoria": "nuevos-combos",
+        "nombre": "Croissant o medialuna + infusión",
+        "descripcion": "",
+        "precio": 10500,
+        "foto": "img/carta/croissant.webp"
+      },
+      {
+        "id": "combo-croissant-jyq",
+        "categoria": "nuevos-combos",
+        "nombre": "Croissant o medialuna de jamón y queso + infusión",
+        "descripcion": "",
+        "precio": 13500
+      },
+      {
+        "id": "combo-danesa",
+        "categoria": "nuevos-combos",
+        "nombre": "Danesa + infusión",
+        "descripcion": "Pastelera y frutos rojos, o peras y crema de almendras.",
+        "precio": 14500,
+        "foto": "img/carta/danesa-frutos-rojos.webp"
+      },
+      {
+        "id": "avocado-toast-infusion",
+        "categoria": "nuevos-combos",
+        "nombre": "Avocado toast + infusión",
+        "descripcion": "",
+        "precio": 19500,
+        "foto": "img/carta/avocado-toast.webp"
+      },
+      {
+        "id": "danesa-de-palta-y-huevo-infusion",
+        "categoria": "nuevos-combos",
+        "nombre": "Danesa de palta y huevo + infusión",
+        "descripcion": "",
+        "precio": 19500,
+        "foto": "img/carta/danesa-palta.webp"
+      },
+      {
+        "id": "bowl-de-yogurt-clasico-infusion",
+        "categoria": "nuevos-combos",
+        "nombre": "Bowl de yogurt clásico + infusión",
+        "descripcion": "",
+        "precio": 15500,
+        "foto": "img/carta/bowl-yogurt.webp"
+      },
+      {
+        "id": "combo-francesa-clasica",
+        "categoria": "nuevos-combos",
+        "nombre": "Tostada francesa clásica + infusión",
+        "descripcion": "Con yogurt, miel y frutos rojos.",
+        "precio": 19500,
+        "foto": "img/carta/francesa-clasica.webp"
+      },
+      {
+        "id": "combo-francesa-tiramisu",
+        "categoria": "nuevos-combos",
+        "nombre": "Tostada francesa tiramisú y toffee + infusión",
+        "descripcion": "",
+        "precio": 19500
+      },
+      {
+        "id": "combo-francesa-peras",
+        "categoria": "nuevos-combos",
+        "nombre": "Tostada francesa con peras asadas + infusión",
+        "descripcion": "",
+        "precio": 19500
+      },
+      {
+        "id": "agranda-tu-exprimido-de-naranja",
+        "categoria": "nuevos-combos",
+        "nombre": "Agrandá tu exprimido de naranja",
+        "descripcion": "Adicional.",
+        "precio": 4500
+      },
+      {
+        "id": "ojo-de-bife",
+        "categoria": "menu-ejecutivo",
+        "nombre": "Ojo de bife sin hueso con papas fritas",
+        "descripcion": "",
+        "precio": 19900,
+        "foto": "img/carta/ojo-de-bife.webp"
+      },
+      {
+        "id": "omelette-champinon",
+        "categoria": "menu-ejecutivo",
+        "nombre": "Omelette de champiñón y queso",
+        "descripcion": "Con ensaladita de estación.",
+        "precio": 19900
+      },
+      {
+        "id": "cookie-chips-de-chocolate",
+        "categoria": "pasteleria-avito",
+        "nombre": "Cookie chips de chocolate",
+        "descripcion": "",
+        "precio": 6500,
+        "foto": "img/carta/cookie.webp"
+      },
+      {
+        "id": "cookie-avena-manzana-y-pasas",
+        "categoria": "pasteleria-avito",
+        "nombre": "Cookie avena, manzana y pasas",
+        "descripcion": "",
+        "precio": 6500
+      },
+      {
+        "id": "cookie-keto-de-mani-y-chocolate",
+        "categoria": "pasteleria-avito",
+        "nombre": "Cookie Keto de maní y chocolate",
+        "descripcion": "",
+        "precio": 6500
+      },
+      {
+        "id": "cookie-doble-chocolate",
+        "categoria": "pasteleria-avito",
+        "nombre": "Cookie doble chocolate",
+        "descripcion": "",
+        "precio": 6500
+      },
+      {
+        "id": "budin-carrot-cake",
+        "categoria": "pasteleria-avito",
+        "nombre": "Budín carrot cake",
+        "descripcion": "",
+        "precio": 6500
+      },
+      {
+        "id": "budin-de-banana",
+        "categoria": "pasteleria-avito",
+        "nombre": "Budín de banana",
+        "descripcion": "",
+        "precio": 6500
+      },
+      {
+        "id": "budin-de-limon",
+        "categoria": "pasteleria-avito",
+        "nombre": "Budín de limón",
+        "descripcion": "",
+        "precio": 6500
+      },
+      {
+        "id": "budin-de-chocolate",
+        "categoria": "pasteleria-avito",
+        "nombre": "Budín de chocolate",
+        "descripcion": "",
+        "precio": 7800
+      },
+      {
+        "id": "alfajor-negro",
+        "categoria": "pasteleria-avito",
+        "nombre": "Alfajor de chocolate negro, dulce de leche y mousse",
+        "descripcion": "",
+        "precio": 9800
+      },
+      {
+        "id": "alfajor-blanco",
+        "categoria": "pasteleria-avito",
+        "nombre": "Alfajor de chocolate blanco, frutos rojos y dulce de leche",
+        "descripcion": "",
+        "precio": 9800
+      },
+      {
+        "id": "torta-rogel",
+        "categoria": "pasteleria-avito",
+        "nombre": "Torta Rogel",
+        "descripcion": "Porción.",
+        "precio": 12500,
+        "foto": "img/carta/rogel.webp"
+      },
+      {
+        "id": "torta-vasca",
+        "categoria": "pasteleria-avito",
+        "nombre": "Torta vasca",
+        "descripcion": "",
+        "precio": 16500
+      },
+      {
+        "id": "marquise-de-chocolate",
+        "categoria": "pasteleria-avito",
+        "nombre": "Marquise de chocolate",
+        "descripcion": "",
+        "precio": 15500
+      },
+      {
+        "id": "ristretto",
+        "categoria": "cafeteria",
+        "nombre": "Ristretto",
+        "descripcion": "",
+        "precio": 4100
+      },
+      {
+        "id": "espresso",
+        "categoria": "cafeteria",
+        "nombre": "Espresso, cortado, lungo o lágrima",
+        "descripcion": "",
+        "precio": 4500
+      },
+      {
+        "id": "cafe-doble",
+        "categoria": "cafeteria",
+        "nombre": "Café doble",
+        "descripcion": "",
+        "precio": 5600
+      },
+      {
+        "id": "capuccino",
+        "categoria": "cafeteria",
+        "nombre": "Capuccino",
+        "descripcion": "",
+        "precio": 5500,
+        "foto": "img/carta/capuccino.webp"
+      },
+      {
+        "id": "latte-flat-white",
+        "categoria": "cafeteria",
+        "nombre": "Latte / flat white",
+        "descripcion": "",
+        "precio": 6100,
+        "foto": "img/carta/capuccino.webp"
+      },
+      {
+        "id": "vainilla-latte",
+        "categoria": "cafeteria",
+        "nombre": "Vainilla latte",
+        "descripcion": "Espresso, leche espumada y syrup de vainilla.",
+        "precio": 6100
+      },
+      {
+        "id": "matcha-latte",
+        "categoria": "cafeteria",
+        "nombre": "Matcha latte",
+        "descripcion": "Matcha orgánico con leche vaporizada.",
+        "precio": 6100
+      },
+      {
+        "id": "caramel-latte",
+        "categoria": "cafeteria",
+        "nombre": "Caramel latte",
+        "descripcion": "",
+        "precio": 6100
+      },
+      {
+        "id": "iced",
+        "categoria": "cafeteria",
+        "nombre": "Iced flat white, latte, mocca o americano",
+        "descripcion": "",
+        "precio": 5790
+      },
+      {
+        "id": "te",
+        "categoria": "cafeteria",
+        "nombre": "Té en hebras",
+        "descripcion": "Black, green o chamomile.",
+        "precio": 4590
+      },
+      {
+        "id": "2-gin-tonic",
+        "categoria": "happy-hour",
+        "nombre": "2 Gin & Tonic",
+        "descripcion": "",
+        "precio": 14900
+      },
+      {
+        "id": "2-campari",
+        "categoria": "happy-hour",
+        "nombre": "2 Campari",
+        "descripcion": "",
+        "precio": 14900
+      },
+      {
+        "id": "2-aperol",
+        "categoria": "happy-hour",
+        "nombre": "2 Aperol",
+        "descripcion": "",
+        "precio": 14900
+      },
+      {
+        "id": "2-fernet",
+        "categoria": "happy-hour",
+        "nombre": "2 Fernet",
+        "descripcion": "",
+        "precio": 14900
+      },
+      {
+        "id": "medialuna",
+        "categoria": "laminados",
+        "nombre": "Medialuna",
+        "descripcion": "",
+        "precio": 4900
+      },
+      {
+        "id": "croissant",
+        "categoria": "laminados",
+        "nombre": "Croissant",
+        "descripcion": "",
+        "precio": 6000,
+        "foto": "img/carta/croissant.webp"
+      },
+      {
+        "id": "pain-au-chocolat",
+        "categoria": "laminados",
+        "nombre": "Pain au Chocolat",
+        "descripcion": "",
+        "precio": 6500
+      },
+      {
+        "id": "roll-de-canela",
+        "categoria": "laminados",
+        "nombre": "Roll de canela",
+        "descripcion": "Bañado con frosting.",
+        "precio": 6500
+      },
+      {
+        "id": "croissant-con-dulce-de-leche",
+        "categoria": "laminados",
+        "nombre": "Croissant con dulce de leche",
+        "descripcion": "",
+        "precio": 8600
+      },
+      {
+        "id": "croissant-pastelera",
+        "categoria": "laminados",
+        "nombre": "Croissant con crema pastelera y frutos rojos",
+        "descripcion": "",
+        "precio": 9200,
+        "foto": "img/carta/croissant-pastelera.webp"
+      },
+      {
+        "id": "danesa-frutos-rojos",
+        "categoria": "laminados",
+        "nombre": "Danesa de pastelera y frutos rojos",
+        "descripcion": "",
+        "precio": 9900,
+        "foto": "img/carta/danesa-frutos-rojos.webp"
+      },
+      {
+        "id": "danesa-peras",
+        "categoria": "laminados",
+        "nombre": "Danesa de peras y crema de almendras",
+        "descripcion": "",
+        "precio": 9900
+      },
+      {
+        "id": "francesa-clasica",
+        "categoria": "tostas-avito",
+        "nombre": "Tostada francesa clásica",
+        "descripcion": "Con yogurt, miel y frutos rojos.",
+        "precio": 14900,
+        "foto": "img/carta/francesa-clasica.webp"
+      },
+      {
+        "id": "francesa-peras",
+        "categoria": "tostas-avito",
+        "nombre": "Tostada francesa con peras asadas",
+        "descripcion": "",
+        "precio": 14900
+      },
+      {
+        "id": "avocado-toast",
+        "categoria": "huevos-y-algo-mas",
+        "nombre": "Avocado toast",
+        "descripcion": "",
+        "precio": 11500,
+        "foto": "img/carta/avocado-toast.webp"
+      },
+      {
+        "id": "omelette-jyq",
+        "categoria": "huevos-y-algo-mas",
+        "nombre": "Omelette de jamón y queso",
+        "descripcion": "Con ensaladita de estación.",
+        "precio": 15500
+      },
+      {
+        "id": "huevos-revueltos",
+        "categoria": "huevos-y-algo-mas",
+        "nombre": "Huevos revueltos",
+        "descripcion": "Chipa bagel con huevos revueltos y panceta crujiente.",
+        "precio": 16500,
+        "foto": "img/carta/huevos-revueltos.webp"
+      },
+      {
+        "id": "danesa-de-palta-y-huevo",
+        "categoria": "huevos-y-algo-mas",
+        "nombre": "Danesa de palta y huevo",
+        "descripcion": "Con huevo mollet y ensaladita.",
+        "precio": 16500,
+        "foto": "img/carta/danesa-palta.webp"
+      },
+      {
+        "id": "huevos-turcos",
+        "categoria": "huevos-y-algo-mas",
+        "nombre": "Huevos Turcos",
+        "descripcion": "Yogurt cítrico, huevo mollet, trucha curada, pimentón ahumado.",
+        "precio": 17500
+      },
+      {
+        "id": "plato-de-frutas",
+        "categoria": "frutas",
+        "nombre": "Plato de frutas",
+        "descripcion": "",
+        "precio": 9500
+      },
+      {
+        "id": "bowl-de-yogurt-casero",
+        "categoria": "frutas",
+        "nombre": "Bowl de yogurt casero",
+        "descripcion": "Fruta, granola, miel.",
+        "precio": 10900,
+        "foto": "img/carta/bowl-yogurt.webp"
+      },
+      {
+        "id": "tostadas",
+        "categoria": "entre-panes",
+        "nombre": "Tostadas",
+        "descripcion": "",
+        "precio": 6800,
+        "foto": "img/carta/tostadas.webp"
+      },
+      {
+        "id": "croissant-de-jamon-y-queso",
+        "categoria": "entre-panes",
+        "nombre": "Croissant de jamón y queso",
+        "descripcion": "",
+        "precio": 10500
+      },
+      {
+        "id": "tostado-en-chipa-de-jamon-y-queso",
+        "categoria": "entre-panes",
+        "nombre": "Tostado en chipa de jamón y queso",
+        "descripcion": "",
+        "precio": 12999
+      },
+      {
+        "id": "croque-madame",
+        "categoria": "entre-panes",
+        "nombre": "Croque Madame",
+        "descripcion": "Cheddar, lomito horneado, bechamel, huevo a la chapa.",
+        "precio": 14500
+      },
+      {
+        "id": "focaccia-de-jamon-crudo-y-fontina",
+        "categoria": "entre-panes",
+        "nombre": "Focaccia de jamón crudo y fontina",
+        "descripcion": "Rúcula, tomates asados.",
+        "precio": 14900
+      },
+      {
+        "id": "hojaldradito-de-jamon-y-queso",
+        "categoria": "entre-panes",
+        "nombre": "Hojaldradito de jamón y queso",
+        "descripcion": "Con chips de boniato.",
+        "precio": 15500
+      },
+      {
+        "id": "sandwich-de-asadito-argentino",
+        "categoria": "entre-panes",
+        "nombre": "Sándwich de asadito argentino",
+        "descripcion": "Brioche, pepinos encurtidos, mostaza.",
+        "precio": 17500
+      },
+      {
+        "id": "hummus-de-arveja-con-olivas",
+        "categoria": "entraditas",
+        "nombre": "Hummus de arveja con olivas",
+        "descripcion": "",
+        "precio": 13500
+      },
+      {
+        "id": "plato-de-quesos",
+        "categoria": "entraditas",
+        "nombre": "Plato de quesos",
+        "descripcion": "",
+        "precio": 25900
+      },
+      {
+        "id": "plato-de-embutidos",
+        "categoria": "entraditas",
+        "nombre": "Plato de embutidos",
+        "descripcion": "",
+        "precio": 22900
+      },
+      {
+        "id": "empanada-de-cabrito",
+        "categoria": "entraditas",
+        "nombre": "Empanada de cabrito",
+        "descripcion": "",
+        "precio": 7500,
+        "foto": "img/carta/empanada-cabrito.webp"
+      },
+      {
+        "id": "croquetas-de-osobuco",
+        "categoria": "entraditas",
+        "nombre": "Croquetas de osobuco",
+        "descripcion": "",
+        "precio": 14500
+      },
+      {
+        "id": "ensalada-cesar-avito",
+        "categoria": "sugerencias-de-estacion",
+        "nombre": "Ensalada César Ávito",
+        "descripcion": "",
+        "precio": 18000,
+        "foto": "img/carta/cesar.webp"
+      },
+      {
+        "id": "ensalada-de-estacion",
+        "categoria": "sugerencias-de-estacion",
+        "nombre": "Ensalada de estación",
+        "descripcion": "Verdes, cabutia asada, fontina, olivas, cherry, cebolla encurtida.",
+        "precio": 19900
+      },
+      {
+        "id": "humita-patagonica",
+        "categoria": "sugerencias-de-estacion",
+        "nombre": "Humita Patagónica",
+        "descripcion": "Humita cremosa, pinchos de cordero, salsita picante, choclo quemado.",
+        "precio": 20900
+      },
+      {
+        "id": "milanesa-de-bife-de-chorizo",
+        "categoria": "sugerencias-de-estacion",
+        "nombre": "Milanesa de bife de chorizo",
+        "descripcion": "Papas fritas cítricas o ensaladita.",
+        "precio": 28900
+      },
+      {
+        "id": "tagliatelle",
+        "categoria": "pastas",
+        "nombre": "Tagliatelle de espinaca",
+        "descripcion": "Salsas a elección: amatriciana, azafranada, putanesca, marinara, 4 quesos, panna o pesto.",
+        "precio": 22500,
+        "foto": "img/carta/tagliatelle.webp"
+      },
+      {
+        "id": "sorrentinos",
+        "categoria": "pastas",
+        "nombre": "Sorrentinos de jamón y mozzarella",
+        "descripcion": "Salsas a elección: amatriciana, azafranada, putanesca, marinara, 4 quesos, panna o pesto.",
+        "precio": 22500,
+        "foto": "img/carta/sorrentinos.webp"
+      },
+      {
+        "id": "triangolini",
+        "categoria": "pastas",
+        "nombre": "Triangolini de cordero, menta y queso",
+        "descripcion": "Salsas a elección: amatriciana, azafranada, putanesca, marinara, 4 quesos, panna o pesto.",
+        "precio": 22500
+      },
+      {
+        "id": "lasagna",
+        "categoria": "pastas",
+        "nombre": "Lasagna bolognesa",
+        "descripcion": "Salsas a elección: amatriciana, azafranada, putanesca, marinara, 4 quesos, panna o pesto.",
+        "precio": 26500
+      },
+      {
+        "id": "pansotti",
+        "categoria": "pastas",
+        "nombre": "Pansotti de pollo, espinaca y perejil",
+        "descripcion": "Salsas a elección: amatriciana, azafranada, putanesca, marinara, 4 quesos, panna o pesto.",
+        "precio": 26500
+      },
+      {
+        "id": "pera-al-vino",
+        "categoria": "postres",
+        "nombre": "Pera al vino",
+        "descripcion": "Crema de almendras y mascarpone.",
+        "precio": 9500
+      },
+      {
+        "id": "agua-con-sin-gas",
+        "categoria": "bebidas-sin-alcohol",
+        "nombre": "Agua con / sin gas",
+        "descripcion": "",
+        "precio": 4500
+      },
+      {
+        "id": "linea-coca-cola",
+        "categoria": "bebidas-sin-alcohol",
+        "nombre": "Línea Coca-Cola",
+        "descripcion": "Lata.",
+        "precio": 4500
+      },
+      {
+        "id": "limonada",
+        "categoria": "bebidas-sin-alcohol",
+        "nombre": "Limonada de menta y jengibre",
+        "descripcion": "500 ml. También en jarra de 1 litro: $10.500.",
+        "precio": 5500
+      },
+      {
+        "id": "naranjada",
+        "categoria": "bebidas-sin-alcohol",
+        "nombre": "Naranjada con romero",
+        "descripcion": "500 ml. También en jarra de 1 litro: $11.500.",
+        "precio": 6200
+      },
+      {
+        "id": "exprimido-de-naranja",
+        "categoria": "bebidas-sin-alcohol",
+        "nombre": "Exprimido de naranja",
+        "descripcion": "",
+        "precio": 6500
+      },
+      {
+        "id": "smoothie-de-dulce-de-leche",
+        "categoria": "bebidas-sin-alcohol",
+        "nombre": "Smoothie de dulce de leche",
+        "descripcion": "",
+        "precio": 8500
+      },
+      {
+        "id": "banana-y-leche-de-almendras",
+        "categoria": "bebidas-sin-alcohol",
+        "nombre": "Banana y leche de almendras",
+        "descripcion": "",
+        "precio": 7500
+      },
+      {
+        "id": "licuado-de-temporada",
+        "categoria": "bebidas-sin-alcohol",
+        "nombre": "Licuado de temporada",
+        "descripcion": "",
+        "precio": 7500
+      },
+      {
+        "id": "detox",
+        "categoria": "bebidas-sin-alcohol",
+        "nombre": "Detox",
+        "descripcion": "",
+        "precio": 7500
+      },
+      {
+        "id": "rosarito",
+        "categoria": "bebidas-sin-alcohol",
+        "nombre": "Rosarito",
+        "descripcion": "Naranja, ananá, frambuesa.",
+        "precio": 7500
+      },
+      {
+        "id": "stella",
+        "categoria": "cervezas-y-tragos",
+        "nombre": "Stella Artois",
+        "descripcion": "Porrón de 330 cc.",
+        "precio": 5500
+      },
+      {
+        "id": "campari-spritz",
+        "categoria": "cervezas-y-tragos",
+        "nombre": "Campari Spritz",
+        "descripcion": "",
+        "precio": 10500
+      },
+      {
+        "id": "clasicos-10200",
+        "categoria": "cervezas-y-tragos",
+        "nombre": "Campari orange o tonic, Aperol spritz, fernet con cola o gin tonic",
+        "descripcion": "",
+        "precio": 10200
+      },
+      {
+        "id": "clasicos-9800",
+        "categoria": "cervezas-y-tragos",
+        "nombre": "Caipiroska, mojito, Negroni o Boulevardier",
+        "descripcion": "",
+        "precio": 9800
+      },
+      {
+        "id": "avito-sour",
+        "categoria": "cervezas-y-tragos",
+        "nombre": "Avito Sour",
+        "descripcion": "",
+        "precio": 9500
+      },
+      {
+        "id": "avito-summer",
+        "categoria": "cervezas-y-tragos",
+        "nombre": "Avito Summer",
+        "descripcion": "Vodka, mango, maracuyá, limón, licor de naranja.",
+        "precio": 11500
+      },
+      {
+        "id": "french-75",
+        "categoria": "cervezas-y-tragos",
+        "nombre": "French 75 o vermut Ávito",
+        "descripcion": "",
+        "precio": 9400
+      },
+      {
+        "id": "rob-roy",
+        "categoria": "cervezas-y-tragos",
+        "nombre": "Rob Roy",
+        "descripcion": "",
+        "precio": 12000
+      },
+      {
+        "id": "old-fashioned",
+        "categoria": "cervezas-y-tragos",
+        "nombre": "Old Fashioned",
+        "descripcion": "",
+        "precio": 12500
+      },
+      {
+        "id": "penicillin",
+        "categoria": "cervezas-y-tragos",
+        "nombre": "Penicillin",
+        "descripcion": "",
+        "precio": 9600
+      },
+      {
+        "id": "copa-de-vino",
+        "categoria": "vinos",
+        "nombre": "Copa de vino",
+        "descripcion": "Cepas del día.",
+        "precio": 7500,
+        "foto": "img/carta/copa-vino.webp"
+      },
+      {
+        "id": "gift-brunch",
+        "categoria": "gift-cards",
+        "nombre": "Gift card · Brunch para 2",
+        "descripcion": "El brunch de temporada para dos, con 2 Aperol.",
+        "precio": 54000,
+        "foto": "img/carta/brunch-para-2.webp"
+      },
+      {
+        "id": "gift-happy",
+        "categoria": "gift-cards",
+        "nombre": "Gift card · Happy hour para 2",
+        "descripcion": "Dos tragos clásicos en el happy hour.",
+        "precio": 14900,
+        "foto": "img/carta/copa-vino.webp"
+      },
+      {
+        "id": "gift-merienda",
+        "categoria": "gift-cards",
+        "nombre": "Gift card · Merienda para 2",
+        "descripcion": "Dos infusiones y dos combos dulces a elección.",
+        "precio": 39000,
+        "foto": "img/carta/croissant-pastelera.webp"
+      }
+    ]
+  },
+  "textos": {
+    "tuPedido": "Tu Ávito para llevar",
+    "verPedido": "Mi bolsa",
+    "carritoVacio": "Tu bolsa está vacía.",
+    "carritoVacioSub": "Sumá algo de la pastelería o una gift card y pasalo a buscar por el ex convento.",
+    "retiro": "Retiro en Pareja 3670",
+    "reservarMesa": "Reservá tu mesa en el ex convento",
+    "pedidoListo": "¡Listo, ya es un Ávito!",
+    "waPedido": "Hola Ávito! Quiero pasar a retirar:",
+    "comentario": "Comentario (cumple, cita, cowork, silla para bebé…)",
+    "agregar": "Sumar",
+    "notaPedido": "Para quién es la gift card, o algo que tengamos que saber"
+  }
+}
